@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy", sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+#text h1 {
+  font-weight: 500;
+  font-size: 6vw;
+}
+
+#text {
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  position: absolute;
+  bottom: 20%;
+  width: 100vw;
+  /* height: 120px; */
+  padding: 0 10vw;
+}
+
+#textright {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  justify-content: space-between;
+}
+
+#textright p {
+  font-size: 15px;
+  width: 40%;
+}
+#textright i {
+  color: white;
+}
+#overlay {
+  width: 100%;
+  min-height: inherit;
+  background-color: rgba(160, 155, 155, 0.3);
+}
+
+#top {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  background-color: red;
+  background-image: url(https://images.unsplash.com/photo-1576132663209-7bd95a8e635e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+#bottom {
+  display: flex;
+  width: 100%;
+  min-height: 40vh;
+}
+
+#bottom1 {
+  min-height: inherit;
+  width: 25%;
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+}
+#bottom1 p {
+  margin-top: 20px;
+}
+
+#bottom2 {
+  min-height: inherit;
+  width: 25%;
+  background-color: rgb(153, 52, 52);
+  background-image: url(https://images.unsplash.com/photo-1542318418-572cbf7eb3be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  background-position: center;
+  background-size: cover;
+}
+
+#bottom3 {
+  min-height: inherit;
+  width: 20%;
+  background-color: rgb(105, 211, 44);
+}
+
+#bottom3top {
+  width: 100%;
+  min-width: 20vh;
+  background-color: red;
+  color: white;
+  padding: 20px;
+}
+
+#bottom3top p {
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+#bottom3btm {
+  width: 100%;
+min-width: 20vh;
+  background-color: rgb(194, 118, 19);
+  background-image: url(https://media.istockphoto.com/id/1296163153/photo/woman-with-umbrella-on-rainy-day.jpg?s=1024x1024&w=is&k=20&c=Cn32PPUMNBaHRMuT4phyZf00HO6009vTTMEGxFlHbaM=);
+  background-position: center;
+  background-size: cover;
+}
+
+#bottom4 {
+  width: 30%;
+  min-height: inherit;
+  background-color: #444;
+  color: white;
+  padding: 20px;
+}
+
+.notify {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.notify #photo {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.notify p {
+  width: 86%;
+  font-size: 12px;
+}
+
+@media (max-width: 500px) {
+  #overlay #text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #text h1 {
+    padding-top: 30%;
+    font-size: 10vw;
+  }
+  #overlay #text #textright {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  #overlay #text #textright p {
+    width: initial;
+    margin-top: 10%;
+  }
+
+  #overlay #text #textright #icon {
+    flex-direction: column;
+    margin-top: 10%;
+  }
+
+  #bottom {
+    flex-direction: column;
+  }
+
+  #bottom1 {
+    width: 100%;
+  }
+  #bottom2 {
+    width: 100%;
+  }
+  #bottom3 {
+    flex-direction: column;
+    width: 100%;
+  }
+  #bottom4 {
+    width: 100%;
+  }
+}
